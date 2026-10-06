@@ -1,0 +1,29 @@
+{
+	"name": "zodiac1978/media-library-health-check",
+	"description": "Audits the WordPress Media Library for file, image, and metadata problems without changing data.",
+	"type": "wordpress-plugin",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Torsten Landsiedel",
+			"homepage": "https://torstenlandsiedel.de"
+		}
+	],
+	"require": {
+		"php": ">=7.4"
+	},
+	"require-dev": {
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+		"squizlabs/php_codesniffer": "^3.13",
+		"wp-coding-standards/wpcs": "^3.2"
+	},
+	"scripts": {
+		"lint": "phpcs --standard=WordPress --extensions=php --ignore=vendor ."
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	}
+}

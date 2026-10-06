@@ -34,3 +34,18 @@ This plugin is licensed under the [GNU General Public License v2.0 or later](htt
 ## Stay up to date
 
 You need to have [Git Updater](https://github.com/afragen/git-updater) by Andy Fragen installed to keep the plugin up to date directly from GitHub.
+
+## Tests
+
+Install the development dependencies and run the WordPress Coding Standards checks with:
+
+```sh
+composer install
+composer lint
+```
+
+Check the PHP syntax locally with:
+
+```sh
+find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+```
