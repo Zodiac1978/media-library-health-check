@@ -7,6 +7,8 @@
  * Requires PHP: 7.4
  * Author: OpenAI
  * License: GPL-2.0-or-later
+ * Update URI: https://github.com/Zodiac1978/media-library-health-check
+ * GitHub Plugin URI: https://github.com/Zodiac1978/media-library-health-check
  * Text Domain: media-library-health-check
  *
  * @package MediaLibraryHealthCheck
