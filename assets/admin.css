@@ -1,0 +1,151 @@
+.mlhc-wrap {
+	max-width: 1180px;
+}
+
+.mlhc-wrap > .description {
+	max-width: 780px;
+	font-size: 14px;
+}
+
+.mlhc-actions,
+.mlhc-progress-meta,
+.mlhc-stats,
+.mlhc-filters {
+	display: flex;
+	gap: 10px;
+}
+
+.mlhc-actions {
+	margin: 18px 0;
+}
+
+.mlhc-panel {
+	max-width: 900px;
+	padding: 20px;
+	margin: 18px 0;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.mlhc-progress-meta {
+	justify-content: space-between;
+}
+
+.mlhc-progress {
+	height: 12px;
+	margin: 12px 0 18px;
+	overflow: hidden;
+	background: #dcdcde;
+	border-radius: 6px;
+}
+
+.mlhc-progress-bar {
+	width: 0;
+	height: 100%;
+	background: #2271b1;
+	transition: width 120ms linear;
+}
+
+.mlhc-stats {
+	flex-wrap: wrap;
+}
+
+.mlhc-stats div {
+	min-width: 115px;
+	padding-right: 18px;
+	border-right: 1px solid #dcdcde;
+}
+
+.mlhc-stats div:last-child {
+	border-right: 0;
+}
+
+.mlhc-stats span,
+.mlhc-stats strong,
+.mlhc-stats small {
+	display: block;
+}
+
+.mlhc-stats strong {
+	font-size: 22px;
+	line-height: 1.2;
+}
+
+.mlhc-stats small {
+	color: #646970;
+}
+
+#mlhc-results,
+#mlhc-unavailable {
+	margin-top: 24px;
+}
+
+.mlhc-filters {
+	flex-wrap: wrap;
+	margin: 12px 0;
+}
+
+.mlhc-filters .is-active {
+	color: #fff;
+	background: #2271b1;
+	border-color: #2271b1;
+}
+
+.mlhc-table-wrap {
+	overflow-x: auto;
+}
+
+#mlhc-results table {
+	min-width: 780px;
+}
+
+#mlhc-results th:first-child {
+	width: 24%;
+}
+
+#mlhc-results th:nth-child(2),
+#mlhc-results th:nth-child(3) {
+	width: 12%;
+}
+
+#mlhc-results td small {
+	display: block;
+	margin-top: 4px;
+	color: #646970;
+}
+
+#mlhc-results td p {
+	margin: 4px 0 0;
+}
+
+.mlhc-severity::before {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin-right: 6px;
+	content: "";
+	border-radius: 50%;
+}
+
+.mlhc-severity[data-severity="error"]::before {
+	background: #d63638;
+}
+
+.mlhc-severity[data-severity="warning"]::before {
+	background: #dba617;
+}
+
+.mlhc-severity[data-severity="info"]::before {
+	background: #2271b1;
+}
+
+@media (max-width: 782px) {
+	.mlhc-progress-meta {
+		flex-direction: column;
+	}
+
+	.mlhc-stats div {
+		width: calc(50% - 24px);
+	}
+}
