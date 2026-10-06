@@ -1,6 +1,6 @@
 # Media Library Health Check
 
-[![Donate with PayPal](https://img.shields.io/badge/PayPal-Donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LCH9UVV7RKDFY)
+[![Build status](https://github.com/Zodiac1978/media-library-health-check/actions/workflows/ci.yml/badge.svg)](https://github.com/Zodiac1978/media-library-health-check/actions/workflows/ci.yml) [![Donate with PayPal](https://img.shields.io/badge/PayPal-Donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LCH9UVV7RKDFY)
 
 Media Library Health Check is a read-only WordPress plugin that audits the Media Library for file, image, and metadata problems without changing files or database records.
 
